@@ -1,0 +1,312 @@
+albasrah: 
+  name: Al Basrah
+  rules: 
+    - 6
+    - 7
+    - 8
+
+asadkhal: 
+  name: Asad Khal
+  rules: 
+    - 1
+    - 2
+    - 3
+    - 4
+
+assaultonmestia:
+  name: Assault on Mestia
+  rules:
+    - 1
+    - 2
+    - 3
+
+battleofiadrang:
+  name: Battle of Ia Drang
+  rules: 
+    - 1
+    - 2
+    - 3
+    - 4
+
+beirut:
+  name: Beirut
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+
+bijarcanyons:
+  name: Bijar Canyons
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 10
+
+blackgold:
+  name: Black Gold
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 7
+    - 9
+    - 10
+    - 11
+
+burningsands:
+  name: Burning Sands
+  rules:
+    - 1
+    - 3
+    - 4
+    - 7
+
+charliespoint:
+  name: 'Charlie''s Point'
+  rules: 
+    - 3
+
+dovre:
+  name: Dovre
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+
+dragonfly:
+  name: Dragon Fly
+  rules:
+    - 1
+    - 3
+    - 5
+    - 7
+
+fallujahwest:
+  name: Fallujah West
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+
+foolsroad:
+  name: Fools Road
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+
+gazabeach:
+  name: Gaza Beach
+  rules:
+    - 1
+    - 3
+    - 5
+    - 7
+
+hill488:
+  name: Hill 488
+  rules:
+    - 2
+    - 3
+
+ironridge:
+  name: Iron Ridge
+  rules:
+    - 1
+    - 3
+    - 4
+    - 5
+    - 7
+    - 9
+
+jabalalburj:
+  name: Jabal Al Burj
+  rules:
+    - 1
+    - 3
+
+karbala:
+  name: Karbala
+  rules:
+    - 5
+    - 6
+    - 7
+    - 8
+
+kashandesert:
+  name: Kashan Desert
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 9
+    - 10
+    - 11
+
+khamisiyah:
+  name: Khamisiyah
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+
+kokan:
+  name: Kokan
+  rules:
+    - 5
+    - 6
+    - 7
+    - 8
+
+korengalvalley:
+  name: Korengal Valley
+  rules:
+    - 1
+    - 5
+
+kozelsk:
+  name: Kozelsk
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+
+lashkarvalley:
+  name: Lashkar Valley
+  rules:
+    - 2
+    - 3
+    - 5
+    - 7
+
+muttrahcity:
+  name: Muttrah City
+  rules:
+    - 1
+    - 3
+    - 4
+
+operationarcher:
+  name: Operation Archer
+  rules:
+    - 5
+    - 6
+    - 7
+    - 8
+
+operationbarracuda:
+  name: Operation Barracuda
+  rules:
+    - 1
+    - 3
+
+operationghosttrain:
+  name: Operation Ghost Train
+  rules:
+    - 1
+    - 3
+
+operationmarlin:
+  name: Operation Marlin
+  rules:
+    - 1
+    - 2
+    - 3
+    - 5
+    - 7
+
+pavlovskbay:
+  name: Pavlovsk Bay
+  rules:
+    - 1
+    - 3
+    - 4
+
+qwairiver:
+  name: Qwai River
+  rules:
+    - 1
+    - 3
+    - 4
+
+ramiel:
+  name: Ramiel
+  rules:
+    - 3
+    - 5
+    - 6
+    - 7
+    - 8
+
+saaremaa:
+  name: Saaremaa
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+
+shijiavalley:
+  name: Shijia Valley
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 9
+    - 11
+
+silenteagle:
+  name: Silent Eagle
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 11
+
+tadsaeoffensive:
+  name: Tad Sae Offensive
+  rules:
+    - 1
+    - 2
+
+vadsocity:
+  name: Vadso City
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+
+wandashan:
+  name: Wanda Shan
+  rules:
+    - 1
+    - 3
+    - 4
+
+xiangshan:
+  name: Xiangshan
+  rules:
+    - 3
+
+yamalia:
+  name: Yamalia
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 9
+    - 11
