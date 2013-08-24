@@ -1,6 +1,7 @@
 class SelectorController < ApplicationController
   def index
       @map_all = Map::Map_List
+      @root = Rails.root
   end
   def select
       @map_all = Map::Map_List
