@@ -1,2 +1,13 @@
-<h1>Selector#select</h1>
-<p>Find me in app/views/selector/select.html.erb</p>
+<%= form_tag("/selector/result") do %>
+    <% @map_names.each do |name| %>
+        <%= image_tag("#{name}.jpg") %>
+        <%= @map_all[name]['name'] %>
+        <% map_list = []%>
+        <% @map_all[name]['rules'].each do |rule| %>
+            <% value = @map_all[name]['name'] + ": " + @map_rule[rule] %>
+            <% map_list << [ @map_rule[rule] , value]  %>
+        <% end %>
+        <%= select :map, name , map_list  %>
+    <% end %>
+<%= submit_tag "選択" %>
+<% end %>

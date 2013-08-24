@@ -1,2 +1,11 @@
-<h1>Selector#index</h1>
-<p>Find me in app/views/selector/index.html.erb</p>
+<%= form_tag("/selector/select") do %>
+<% @map_all.keys.each do |map| %>
+    <div class="">
+        <%= image_tag("#{map}.jpg") %>
+        <%= check_box 'map', map %>
+        <%= label :map, map, @map_all[map]['name']  %>
+    </div>
+<% end %>
+
+<%= submit_tag "選択" %>
+<% end %>
