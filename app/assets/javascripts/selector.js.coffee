@@ -8,11 +8,7 @@ $ ->
   $("#masonry-container-check").masonry
     itemSelector: ".masonry-checkbox"
     isAnimated: true
-    isFitWidth: true,
-    columnWidth: 150
 $ ->
   $("#masonry-container-select").masonry
     itemSelector: ".masonry-selectbox"
     isAnimated: true
-    isFitWidth: true,
-    columnWidth: 150
