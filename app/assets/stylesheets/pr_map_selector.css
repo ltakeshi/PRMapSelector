@@ -1,0 +1,12 @@
+.masonry-checkbox{
+    height: 160px;
+    width: 240px;
+}
+.masonry-selectbox{
+    height: 200px;
+    width: 240px;
+}
+
+label{
+    display: inline;
+}

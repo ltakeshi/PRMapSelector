@@ -1,11 +1,13 @@
 <%= form_tag("/selector/select") do %>
+<div id="masonry-container-check">
 <% @map_all.keys.each do |map| %>
-    <div class="">
+    <div class="masonry-checkbox">
         <%= image_tag("#{map}.jpg") %>
         <%= check_box 'map', map %>
         <%= label :map, map, @map_all[map]['name']  %>
     </div>
 <% end %>
 
+</div>
 <%= submit_tag "選択" %>
 <% end %>

@@ -1,5 +1,7 @@
 <%= form_tag("/selector/result") do %>
+<div id="masonry-container-select">
     <% @map_names.each do |name| %>
+    <div class="masonry-selectbox">
         <%= image_tag("#{name}.jpg") %>
         <%= @map_all[name]['name'] %>
         <% map_list = []%>
@@ -8,6 +10,9 @@
             <% map_list << [ @map_rule[rule] , value]  %>
         <% end %>
         <%= select :map, name , map_list  %>
+    </div>
     <% end %>
+</div>
+
 <%= submit_tag "選択" %>
 <% end %>
