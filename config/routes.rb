@@ -1,9 +1,11 @@
 PRMapSelector::Application.routes.draw do
+  get "about/index"
   get "selector/result"
   get "selector/select"
   get "selector/index"
 
   get "" => "selector#index"
+  get "about" => "about#index"
   post "selector/select"
   post "selector/result"
 
