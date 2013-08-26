@@ -1,14 +1,16 @@
 <%= form_tag("/selector/select") do %>
-<%= submit_tag "選択" , :class => "btn" %>
-<%= button_to_function "すべて解除", "$(\"input[type='checkbox']\").attr('checked', false)", :class => "btn" %>
+<%= submit_tag "選択" , :class => "btn btn-primary" %>
+<%= button_to_function "すべて解除", "$(\"input[type='checkbox']\").attr('checked', false)", :class => "btn btn-warning" %>
 <hr>
 <div id="masonry-container-check">
 <% @map_all.keys.each do |map| %>
-    <div class="masonry-checkbox">
+   <label for= <%= "map_" + map %>>
+   <div class="masonry-checkbox">
         <%= image_tag("#{map}.jpg") %>
         <%= check_box 'map', map %>
-        <%= label :map, map, @map_all[map]['name']  %>
+        <%= @map_all[map]['name']  %>
     </div>
+</label>
 <% end %>
 
 </div>
