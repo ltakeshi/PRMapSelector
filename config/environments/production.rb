@@ -78,4 +78,7 @@ PRMapSelector::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  #google analytics
+  GA.tracker = "UA-6679777-5'"
 end

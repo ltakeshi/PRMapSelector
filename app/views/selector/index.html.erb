@@ -1,4 +1,5 @@
 <%= form_tag("/selector/select") do %>
+<%= submit_tag "選択" %>
 <div id="masonry-container-check">
 <% @map_all.keys.each do |map| %>
     <div class="masonry-checkbox">
@@ -9,5 +10,4 @@
 <% end %>
 
 </div>
-<%= submit_tag "選択" %>
 <% end %>
