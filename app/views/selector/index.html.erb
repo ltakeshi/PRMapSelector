@@ -1,5 +1,7 @@
 <%= form_tag("/selector/select") do %>
-<%= submit_tag "選択" %>
+<%= submit_tag "選択" , :class => "btn" %>
+<%= button_to_function "すべて解除", "$(\"input[type='checkbox']\").attr('checked', false)", :class => "btn" %>
+<hr>
 <div id="masonry-container-check">
 <% @map_all.keys.each do |map| %>
     <div class="masonry-checkbox">
