@@ -1,7 +1,7 @@
 <%= form_tag("/selector/result") do %>
 <div id="masonry-container-select">
     <% @map_names.each do |name| %>
-    <div class="masonry-selectbox">
+    <div class="masonry-selectbox nbox">
         <%= image_tag("#{name}.jpg") %>
         <%= @map_all[name]['name'] %>
         <% map_list = []%>
