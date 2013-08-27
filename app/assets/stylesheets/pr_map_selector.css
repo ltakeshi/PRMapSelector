@@ -25,6 +25,9 @@ label{
 
 }
 
+.alert-info{
+    width: 400px;
+}
 
 input[type="checkbox"]{
   display: none;
