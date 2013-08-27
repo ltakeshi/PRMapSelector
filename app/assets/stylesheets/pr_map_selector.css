@@ -1,6 +1,6 @@
 .masonry-checkbox{
     height: 160px;
-    width: 250px;
+    width: 240px;
 }
 .masonry-selectbox{
     height: 200px;
@@ -9,4 +9,13 @@
 
 label{
     display: inline;
+}
+
+.checked{
+  background-color: #d1ff8c;
+}
+
+.nbox{
+    padding: 4px;
+    margin: 3px;
 }

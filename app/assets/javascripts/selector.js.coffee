@@ -3,12 +3,3 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 #
 #
-
-$ ->
-  $("#masonry-container-check").masonry
-    itemSelector: ".masonry-checkbox"
-    isAnimated: true
-$ ->
-  $("#masonry-container-select").masonry
-    itemSelector: ".masonry-selectbox"
-    isAnimated: true
