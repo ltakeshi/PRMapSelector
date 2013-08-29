@@ -4,7 +4,7 @@
 }
 .masonry-selectbox{
   height: 180px;
-  width: 250px;
+  width: 240px;
 }
 
 label{
@@ -22,7 +22,6 @@ label{
   -webkit-border-radius : 5px;
   -moz-border-radius    : 5px;
   border-radius         : 5px;
-
 }
 
 .alert-info{

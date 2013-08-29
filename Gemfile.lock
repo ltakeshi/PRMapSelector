@@ -41,6 +41,7 @@ GEM
     excon (0.25.3)
     execjs (2.0.0)
     google-analytics-rails (0.0.4)
+    google-analytics-turbolinks (0.0.3)
     heroku (2.40.0)
       heroku-api (~> 0.3.7)
       launchy (>= 0.3.2)
@@ -144,6 +145,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   google-analytics-rails
+  google-analytics-turbolinks
   heroku
   jbuilder (~> 1.2)
   jquery-rails

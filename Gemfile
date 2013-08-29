@@ -58,3 +58,5 @@ gem 'google-analytics-rails'
 
 gem 'rake'
 gem 'json'
+
+gem 'google-analytics-turbolinks'

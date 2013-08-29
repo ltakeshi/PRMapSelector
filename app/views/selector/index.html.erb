@@ -3,7 +3,7 @@
 マップを選択してから``ルールを選択する"をクリックしてください。``マップ選択解除"を押すとすべてのマップが未選択状態になります。
 </div>
 <%= form_tag("/selector/select") do %>
-<%= submit_tag "ルールを選択する" , :class => "btn btn-primary" %>
+    <%= submit_tag "ルールを選択する" , :class => "btn btn-primary" , :disable_with => 'please wait...'%>
 <%= button_to_function "マップ選択解除", "setCheckOffAll()", :class => "btn btn-warning" %>
 <hr>
 <div id="masonry-container-check">
