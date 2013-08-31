@@ -80,5 +80,5 @@ PRMapSelector::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   #google analytics
-  GA.tracker = "UA-6679777-5"
+  GA.tracker = "UA-6679777-5'"
 end

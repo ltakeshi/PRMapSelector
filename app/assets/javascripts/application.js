@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
+//= require google-analytics-turbolinks 
 //= require_tree .
-//= require google-analytics-turbolinks
