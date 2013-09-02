@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-PRMapSelector::Application.config.secret_key_base = '5b91b896135a370c8d5cf546f3e4fa5c4f28a0cab0967e29671612d5ec22ffd64a956e3e4d6c59d4bce33d4c6ecb74cb2191b1192290239080ae67649b971a08'
+PRMapSelector::Application.config.secret_key_base = 'e298e4b90a625ccb4cd0d4e8a34674999ee0a5c7b217fa231c68c5160a591702c1ae5f1f1525ab599e0c6541720d608ee54e50c79b16ad3aeabcb9c12b4942bd'

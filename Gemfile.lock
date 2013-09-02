@@ -42,7 +42,7 @@ GEM
     execjs (2.0.1)
     google-analytics-rails (0.0.4)
     google-analytics-turbolinks (0.0.3)
-    heroku (2.40.0)
+    heroku (2.40.1)
       heroku-api (~> 0.3.7)
       launchy (>= 0.3.2)
       netrc (~> 0.7.7)
@@ -143,21 +143,26 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder
   coffee-rails (~> 4.0.0)
+  execjs
   google-analytics-rails
   google-analytics-turbolinks
   heroku
-  jbuilder (~> 1.2)
+  jbuilder
   jquery-rails
   json
+  less
   less-rails
+  mime-types
   pg
   rails (= 4.0.0)
   rake
+  rubyzip
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
   therubyracer
   turbolinks
   twitter-bootstrap-rails
-  uglifier (>= 1.3.0)
+  uglifier
