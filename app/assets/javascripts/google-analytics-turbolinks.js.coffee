@@ -1,9 +1,9 @@
 $(document).on 'page:change', ->
-  # Universal Analytics¤Î¾ì¹ç
+  # Universal Analyticsã®å ´åˆ
   if window.ga?
     ga('set', 'location', location.href.split('#')[0])
     ga('send', 'pageview')
 
-  # É¸½à¤Î¥¢¥Ê¥ê¥Æ¥£¥¯¥¹¤Î¾ì¹ç
+  # æ¨™æº–ã®ã‚¢ãƒŠãƒªãƒ†ã‚£ã‚¯ã‚¹ã®å ´åˆ
   if window._gaq?
     _gaq.push(['_trackPageview'])
