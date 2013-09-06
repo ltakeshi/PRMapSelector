@@ -31,3 +31,11 @@ label{
 input[type="checkbox"]{
   display: none;
 }
+
+.result{
+ font-size: larger;
+}
+
+body {
+ font-family: mplus-1m-regular;
+}
