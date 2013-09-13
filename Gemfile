@@ -69,3 +69,5 @@ gem 'mime-types'
 gem 'rubyzip'
 gem 'uglifier'
 gem 'builder'
+
+gem 'zeroclipboard-rails'

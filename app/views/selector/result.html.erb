@@ -1,9 +1,16 @@
 <p>
-<div class="result">
+<div class="result" id="fe_text">
 <% @map_rule_list.each do |rule| %>
-    <%= rule %>
+<%= rule -%>
     </br>
 <% end %>
 </div>
-</p>
+</p><button class='my_clip_button btn btn-primary' data-clipboard-target='fe_text' data-clipboard-text='Default clipboard text from attribute' id='d_clip_button' title='Click me to copy to clipboard.'>
+ <b>クリップボードにコピー</b>
+</button>
+
 <hr>
+
+<script>
+ var clip = new ZeroClipboard($("#d_clip_button"));
+</script>
