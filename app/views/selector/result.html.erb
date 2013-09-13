@@ -11,6 +11,12 @@
 
 <hr>
 
-<script>
- var clip = new ZeroClipboard($("#d_clip_button"));
+<script  type="text/javascript">
+    var clip = new ZeroClipboard($("#d_clip_button"));
+</script>
+
+<script type="text/javascript"> 
+    if(!FlashDetect.installed){
+        $("button").remove();
+    }
 </script>
