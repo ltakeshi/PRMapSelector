@@ -11,7 +11,7 @@
         <%= @map_all[name]['name'] %>
         <% map_list = []%>
         <% @map_all[name]['rules'].each do |rule| %>
-            <% value = @map_all[name]['name'] + ": " + @map_rule[rule] %>
+            <% value = @map_all[name]['name'] + " : " + @map_rule[rule] %>
             <% map_list << [ @map_rule[rule] , value]  %>
         <% end %>
         <%= select :map, name , map_list  %>

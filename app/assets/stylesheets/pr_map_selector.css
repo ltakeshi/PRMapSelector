@@ -37,6 +37,14 @@ input[type="checkbox"]{
  font-size: larger;
 }
 
+.my_clip_button{
+    width:70px;
+    height:30px;
+}
+
+select{
+    color: gray;
+}
 body {
  font-family: mplus-1m-regular;
 }
