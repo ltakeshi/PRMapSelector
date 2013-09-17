@@ -1,18 +1,19 @@
-<p>
-<div class="result" id="fe_text">
+<% list = [] %>
+<div class="result">
 <% @map_rule_list.each do |rule| %>
-<%= rule -%>
+    <%= rule -%>
+    <% list << rule %>
     </br>
 <% end %>
 </div>
-</p><button class='my_clip_button btn btn-primary' data-clipboard-target='fe_text' data-clipboard-text='Default clipboard text from attribute' id='d_clip_button' title='Click me to copy to clipboard.'>
+<button class='my_clip_button btn btn-primary' id="my-button" data-clipboard-text="<%= list.join("\n") %>" title="Click to copy to clipboard.">
  <b>クリップボードにコピー</b>
 </button>
 
 <hr>
 
 <script  type="text/javascript">
-    var clip = new ZeroClipboard($("#d_clip_button"));
+    var clip = new ZeroClipboard( $("button#my-button"));
 </script>
 
 <script type="text/javascript"> 
