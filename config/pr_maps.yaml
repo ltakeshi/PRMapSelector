@@ -89,10 +89,8 @@ dragonfly:
 fallujahwest:
   name: Fallujah West
   rules:
-    - 1
-    - 2
-    - 3
-    - 4
+    - 5
+    - 7
 
 foolsroad:
   name: Fools Road
