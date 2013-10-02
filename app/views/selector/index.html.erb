@@ -4,7 +4,7 @@
 </div>
 <%= form_tag("/selector/select") do %>
     <%= submit_tag "ルールを選択する" , :class => "btn btn-primary" %>
-<%= button_to_function "マップ選択解除", "setCheckOffAll()", :class => "btn btn-warning" %>
+    <%= button_to_function "マップ選択解除", "setCheckOffAll()", :class => "btn btn-warning" %>
 <hr>
 <div id="masonry-container-check">
 <% @map_all.keys.each do |map| %>

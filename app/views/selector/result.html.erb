@@ -1,9 +1,27 @@
-<p>
+<% list = [] %>
 <div class="result">
 <% @map_rule_list.each do |rule| %>
-    <%= rule %>
+    <%= rule -%>
+    <% list << rule %>
     </br>
 <% end %>
 </div>
-</p>
+</br>
+<button class="my_clip_button btn" id="my-button" data-clipboard-text="<%= list.join("\n") %>" title="クリップボードにコピー">
+ <b>コピー</b>
+</button>
+
 <hr>
+
+<script  type="text/javascript">
+    /*
+    var clip = new ZeroClipboard( $("button#my-button"));
+    */
+    var clip = new ZeroClipboard( $("#my-button"));
+</script>
+
+<script type="text/javascript"> 
+    if(!FlashDetect.installed){
+        $("button").remove();
+    }
+</script>

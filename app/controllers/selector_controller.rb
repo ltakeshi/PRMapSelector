@@ -5,7 +5,6 @@ class SelectorController < ApplicationController
         @map_rule = Map::Map_Rule
     end
   def index
-      @root = Rails.root
   end
   def select
       @map_names = params[:map].select{|k,v| v == "1"}.keys

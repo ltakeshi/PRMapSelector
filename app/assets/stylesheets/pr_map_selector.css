@@ -13,6 +13,7 @@ label{
 
 .checked{
   background-color: #d1ff8c;
+  color: black;
 }
 
 .nbox{
@@ -36,6 +37,14 @@ input[type="checkbox"]{
  font-size: larger;
 }
 
+.my_clip_button{
+    width:70px;
+    height:30px;
+}
+
+select{
+    color: gray;
+}
 body {
  font-family: mplus-1m-regular;
 }

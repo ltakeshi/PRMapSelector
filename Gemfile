@@ -62,14 +62,6 @@ gem 'json'
 
 gem 'google-analytics-turbolinks'
 
-# gem 'execjs', '2.0.0'
-# gem 'jbuilder', '1.5.0'
-# gem 'less' , '2.3.2'
-# gem 'mime-types', '1.24'
-# gem 'rubyzip' , '0.9.9'
-# gem 'uglifier', '2.1.2'
-# gem 'builder', '3.1.3'
-
 gem 'execjs'
 gem 'jbuilder'
 gem 'less' 
@@ -77,3 +69,5 @@ gem 'mime-types'
 gem 'rubyzip'
 gem 'uglifier'
 gem 'builder'
+
+gem 'zeroclipboard-rails'
