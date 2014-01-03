@@ -157,13 +157,13 @@ khamisiyah:
     - 3
     - 4
 
-#kokan:
-#  name: Kokan
-#  rules:
-#    - 5
-#    - 6
-#    - 7
-#    - 8
+kokan:
+  name: Kokan
+  rules:
+    - 5
+    - 6
+    - 7
+    - 8
 
 korengalvalley:
   name: Korengal Valley
