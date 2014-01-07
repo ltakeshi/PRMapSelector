@@ -16,8 +16,9 @@ twitter: <%= link_to "@ltakeshi" ,"https://twitter.com/ltakeshi" , :target => '_
 <hr>
 <h4>その他</h4>
 <p>
-このwebサイトはRuby2.0+Rails4.0を用いて<%= link_to "Heroku", "https://www.heroku.com/" , :target => '_blank'%>上に構築されています。Herokuの仕様として、1時間サイトにアクセスがなかった場合はアイドル状態に入り、アクセスが遅くなります。
-このWebサイトはそこまでアクセスが来る想定では無いので、おそらく利用される方が来るたびにアイドルが解除される状態になるでしょうから、アクセスは遅くなりますが仕様です。
+このwebサイトは<%= link_to "Ruby2.1.0", "https://www.ruby-lang.org/" , :target => '_blank'%>+<%= link_to "Rails4.0", "http://rubyonrails.org/" , :target => '_blank'%>を用いて<%= link_to "Heroku", "https://www.heroku.com/" , :target => '_blank'%>上に構築されています。Herokuの仕様として、1時間サイトにアクセスがなかった場合はアイドル状態に入り、アクセスが遅くなります。
+<del>このWebサイトはそこまでアクセスが来る想定では無いので、おそらく利用される方が来るたびにアイドルが解除される状態になるでしょうから、アクセスは遅くなりますが仕様です。</del>
+元々はそのつもりだったんですが、Herokuの仕様への理解がしっかりしてなかったのと、利用するたびにアイドル解除ってのが結構時間掛かっててストレスだったので試験的にアイドルに落ちないようにしてます。
 </p>
 <p>
 また、製作者の都合でメンテナンスが行き届かないとか、BF2:PRから離れてしまった等、トラブルが発生しても対応できない状態が起きた場合にそなえ、このWebサイトの<%= link_to "ソースコード一式" , "https://github.com/ltakeshi/PRMapSelector" , :target => '_blank'%>をgithubにて公開しています。
