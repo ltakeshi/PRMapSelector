@@ -40,7 +40,6 @@ GEM
     erubis (2.7.0)
     excon (0.31.0)
     execjs (2.0.2)
-    google-analytics-rails (0.0.4)
     google-analytics-turbolinks (0.0.3)
     heroku (3.2.2)
       heroku-api (~> 0.3.7)
@@ -149,7 +148,6 @@ DEPENDENCIES
   builder
   coffee-rails (>= 4.0.0)
   execjs
-  google-analytics-rails
   google-analytics-turbolinks
   heroku
   jbuilder
