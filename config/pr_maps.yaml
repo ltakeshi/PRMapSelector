@@ -1,7 +1,6 @@
 albasrah: 
   name: Al Basrah
   rules: 
-    - 4
     - 5
     - 6
     - 7
