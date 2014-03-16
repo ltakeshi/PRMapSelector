@@ -62,8 +62,14 @@ gitで更新されたファイルをステージ
 今回の場合だと  
 
 ```yaml
-sbenehoutskirts:  
-    - 7  
+sbenehoutskirts:
+  name: Sbeneh Outskirts
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 7
 ```
 
 という形式になってます。  
