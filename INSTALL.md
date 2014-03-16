@@ -61,10 +61,10 @@ gitで更新されたファイルをステージ
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
 今回の場合だと  
 
-<code>
+```yaml
 sbenehoutskirts:  
     - 7  
-<code>
+```
 
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
