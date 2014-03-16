@@ -2,30 +2,30 @@
 
 # PRMapSelectorをローカル環境に構築するまで
 ## ライブラリインストール
-`$ sudo apt-get install -y git-core build-essential curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev sqlite3 libsqlite3-dev libpq-dev`
-$ sudo apt-get build-dep ruby-defaults
+    $ sudo apt-get install -y git-core build-essential curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev sqlite3 libsqlite3-dev libpq-dev
+    $ sudo apt-get build-dep ruby-defaults
 
--- Rubyのインストール
-$ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-$ source ~/.bashrc
-$ rbenv install 2.1.0
-$ rbenv rehash
-$ rbenv global 2.1.0
+## Rubyのインストール
+    $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+    $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+    $ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+    $ source ~/.bashrc
+    $ rbenv install 2.1.0
+    $ rbenv rehash
+    $ rbenv global 2.1.0
 
--- Railsインストール
-$ rbenv exec gem install bundler
-$ rbenv rehash
-$ mkdir ~/src
-$ cd ~/src
-$ git clone git@github.com:ltakeshi/PRMapSelector.git
-$ cd PRMapSelector
-$ rbenv exec bundle install
-# PRMapSelectorが起動するか確認。下記を実行すると、railsの鯖が立ち上がるので、
-# http://127.0.0.1:3000/ でアクセスして動作を確認。
-$ bundle exec rails server
+## Railsインストール
+    $ rbenv exec gem install bundler
+    $ rbenv rehash
+    $ mkdir ~/src
+    $ cd ~/src
+    $ git clone git@github.com:ltakeshi/PRMapSelector.git
+    $ cd PRMapSelector
+    $ rbenv exec bundle install
+    # PRMapSelectorが起動するか確認。下記を実行すると、railsの鯖が立ち上がるので、
+    # http://127.0.0.1:3000/ でアクセスして動作を確認。
+    $ bundle exec rails server
 
 - 想定される更新内容
 -- 既存のMapに対するルールの追加ないしは削除
