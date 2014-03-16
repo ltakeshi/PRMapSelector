@@ -40,11 +40,11 @@ config/pr_maps.yamlの要らなくなったルールを行ごと消してもらえれば大丈夫です。
 gitで更新されたファイルをステージ  
 `$ git add .`
 
-更新内容をコミット  
+4. 更新内容をコミット  
 `$ git commit -a -m "更新内容" `  
 この時、更新内容部分は"update マップ名"とか""add マップ名"といった感じです。
 
-更新内容をサーバーにプッシュ  
+5. 更新内容をサーバーにプッシュ  
 `$ git push origin master ;git push heroku master`  
 前のコマンドはgithubに対する更新  
 後ろのコマンドはherokuに対する更新となってます。  
@@ -59,7 +59,7 @@ gitで更新されたファイルをステージ
 今回の場合だと sbenehoutskirts.jpg となってます。  
 
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集。  
-今回の場合だと  
+今回の場合だと
     sbenehoutskirts:
     &nbsp;&nbsp;name: Sbeneh Outskirts
     &nbsp;&nbsp;rules:
