@@ -86,6 +86,7 @@ gitで更新されたファイルをステージ
 
 1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
 今回の場合だと
+```yaml
 <pre>
 sbenehoutskirts:
   name: Sbeneh Outskirts
