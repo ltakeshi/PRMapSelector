@@ -51,7 +51,8 @@ gitで更新されたファイルをステージ
 この作業の後に http://prmapselector.herokuapp.com/ にて更新が反映されてるか確認してください。
 
 ## 新規Mapの追加ないしは既存のMapの削除
-今回はタイミングよく新マップが出たんで、それを例に取ります  
+今回はタイミングよく新マップが出たんで、それを例に取ります
+
 1. [Project Reality: BF2 Map Gallery](http://www.realitymod.com/mapgallery/) からマップの画像を取得してapp/assets/images/に配置。
 存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、
 それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。
