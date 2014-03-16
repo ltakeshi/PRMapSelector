@@ -27,31 +27,31 @@
     # http://127.0.0.1:3000/ でアクセスして動作を確認。
     $ bundle exec rails server
 
-- 想定される更新内容
--- 既存のMapに対するルールの追加ないしは削除
+# 想定される更新内容
+## 既存のMapに対するルールの追加ないしは削除
 1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集。
 config/pr_maps.yamlの要らなくなったルールを行ごと消してもらえれば大丈夫です。
 
 2. 動作確認
 下記コマンドの後、ブラウザでhttp://127.0.0.1:3000/にアクセスして動作を確認
-$ bundle exec rails server
+`$ bundle exec rails server`
 
 3. 更新内容をgitに反映
 gitで更新されたファイルをステージ
-$ git add .
+`$ git add .`
 
 更新内容をコミット
-$ git commit -a -m "更新内容" 
+`$ git commit -a -m "更新内容" `
 この時、更新内容部分は"update マップ名"とか""add マップ名"といった感じです。
 
 更新内容をサーバーにプッシュ
-$ git push origin master ;git push heroku master
+`$ git push origin master ;git push heroku master`
 前のコマンドはgithubに対する更新
 後ろのコマンドはherokuに対する更新となってます。
 この作業の後に http://prmapselector.herokuapp.com/ にて更新が反映されてるか確認してください。
 
--- 新規Mapの追加ないしは既存のMapの削除
-# 今回はタイミングよく新マップが出たんで、それを例に取ります
+## 新規Mapの追加ないしは既存のMapの削除
+今回はタイミングよく新マップが出たんで、それを例に取ります
 1. http://www.realitymod.com/mapgallery/ からマップの画像を取得してapp/assets/images/に配置。
 存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、
 それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。
@@ -60,14 +60,16 @@ $ git push origin master ;git push heroku master
 
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集。
 今回の場合だと
-sbenehoutskirts:
-  name: Sbeneh Outskirts
-  rules:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 7
+
+    sbenehoutskirts:
+      name: Sbeneh Outskirts
+      rules:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 7
+
 という形式になってます。
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。
 記述場所は適切な位置に入れておいてください。
