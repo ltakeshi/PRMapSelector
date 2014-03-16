@@ -85,9 +85,10 @@ gitで更新されたファイルをステージ
 今回の場合だと sbenehoutskirts.jpg となってます。
 
 1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
-今回の場合だと
+今回の場合だと下記のようになっています。  
+仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
+記述場所は適切な位置に入れておいてください。  
 ```yaml
-
 sbenehoutskirts:
   name: Sbeneh Outskirts
   rules:
@@ -97,8 +98,4 @@ sbenehoutskirts:
     - 4
     - 7
 
-
-という形式になってます。  
-仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
-記述場所は適切な位置に入れておいてください。  
-これ以降は上記例の2以降と同じ動きになります。
+1. これ以降は上記例の2以降と同じ動きになります。
