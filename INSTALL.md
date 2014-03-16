@@ -61,14 +61,14 @@ gitで更新されたファイルをステージ
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集。
 今回の場合だと
 
-> "sbenehoutskirts:
-   name: Sbeneh Outskirts
-   rules:
-     - 1
-     - 2
-     - 3
-     - 4
-     - 7"
+> sbenehoutskirts:  
+   name: Sbeneh Outskirts  
+   rules:  
+     - 1  
+     - 2  
+     - 3  
+     - 4  
+     - 7  
 
 という形式になってます。
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。
