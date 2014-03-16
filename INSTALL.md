@@ -80,9 +80,9 @@ gitで更新されたファイルをステージ
 
 1. [Project Reality: BF2 Map Gallery](http://www.realitymod.com/mapgallery/) からマップの画像を取得してapp/assets/images/に配置。
 存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、
-それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。
+それを新マップ名にコピーしてください。
 尚ファイル名はすべて小文字で記号等は一切なしでお願いします。
-今回の場合だと sbenehoutskirts.jpg となってます。
+今回の場合だと _sbenehoutskirts.jpg_ となってます。
 
 1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
 今回の場合だと下記のようになっています。  
