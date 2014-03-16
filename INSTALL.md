@@ -52,12 +52,11 @@ gitで更新されたファイルをステージ
 
 ## 新規Mapの追加ないしは既存のMapの削除
 今回はタイミングよく新マップが出たんで、それを例に取ります  
-1. http://www.realitymod.com/mapgallery/ からマップの画像を取得してapp/assets/images/に配置。  
-存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、  
-それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。  
-尚ファイル名はすべて小文字で記号等は一切なしでお願いします。  
-今回の場合だと sbenehoutskirts.jpg となってます。  
-
+1. http://www.realitymod.com/mapgallery/ からマップの画像を取得してapp/assets/images/に配置。
+存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、
+それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。
+尚ファイル名はすべて小文字で記号等は一切なしでお願いします。
+今回の場合だと sbenehoutskirts.jpg となってます。
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
 今回の場合だと  
 ```yaml
