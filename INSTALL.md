@@ -61,8 +61,16 @@ gitで更新されたファイルをステージ
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
 今回の場合だと  
 
-<code>$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build<code>
+<code>
+sbenehoutskirts:
+  name: Sbeneh Outskirts
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 7
+<code>
 
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
