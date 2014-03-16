@@ -60,7 +60,6 @@ gitで更新されたファイルをステージ
 
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集。  
 今回の場合だと  
-
     sbenehoutskirts:
     &nbsp;&nbsp;name: Sbeneh Outskirts
     &nbsp;&nbsp;rules:
@@ -69,7 +68,6 @@ gitで更新されたファイルをステージ
     &nbsp;&nbsp;&nbsp;&nbsp;- 3
     &nbsp;&nbsp;&nbsp;&nbsp;- 4
     &nbsp;&nbsp;&nbsp;&nbsp;- 7
-
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
 記述場所は適切な位置に入れておいてください。  
