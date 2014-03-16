@@ -63,13 +63,13 @@ gitで更新されたファイルをステージ
 
 
     $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv  
-    $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build  
+`$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build`
 `$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build`
 
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
 記述場所は適切な位置に入れておいてください。  
-&#35;本当はプログラム側でソートするような仕様にしておけばいいんでしょうが、そこまで考えが及んでなかったです、申し訳ない。
+&#35; 本当はプログラム側でソートするような仕様にしておけばいいんでしょうが、そこまで考えが及んでなかったです、申し訳ない。
 
 3. 動作確認  
 上記と同様  
