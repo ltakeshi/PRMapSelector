@@ -62,14 +62,14 @@ gitで更新されたファイルをステージ
 今回の場合だと  
 
 <code>
-sbenehoutskirts:
-  name: Sbeneh Outskirts
-  rules:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 7
+sbenehoutskirts:  
+  name: Sbeneh Outskirts  
+  rules:  
+    - 1  
+    - 2  
+    - 3  
+    - 4  
+    - 7  
 <code>
 
 という形式になってます。  
