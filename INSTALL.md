@@ -63,12 +63,6 @@ gitで更新されたファイルをステージ
 
 <code>
 sbenehoutskirts:  
-  name: Sbeneh Outskirts  
-  rules:  
-    - 1  
-    - 2  
-    - 3  
-    - 4  
     - 7  
 <code>
 
