@@ -258,6 +258,15 @@ saaremaa:
     - 3
     - 4
 
+sbenehoutskirts:
+  name: Sbeneh Outskirts
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 7
+
 shijiavalley:
   name: Shijia Valley
   rules:
