@@ -42,7 +42,7 @@ gitで更新されたファイルをステージ
 
 4. 更新内容をコミット  
 `$ git commit -a -m "更新内容" `  
-この時、更新内容部分は"update マップ名"とか""add マップ名"といった感じです。
+この時、更新内容部分は"update マップ名"とか"add マップ名"といった感じです。
 
 5. 更新内容をサーバーにプッシュ  
 `$ git push origin master ;git push heroku master`  
