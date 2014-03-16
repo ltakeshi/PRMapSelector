@@ -1,4 +1,21 @@
 # Github及び、Herokuへのアカウント作成
+## 承前
+GithubとHerokuへの編集権限出すので、捨てなメールアドレスでもいいので、適当なメールアドレスを一つ教えてください。  
+
+## SSHの公開鍵認証用のファイルを作成(すでに存在してる場合は読み飛ばしてください)
+`$ ssh-keygen`
+で公開鍵を作成。引数等を与えないとid_rsaとid_rsa.pubというファイルが生成されるはず
+
+## Githubへの登録
+1. [Github](https://github.com/)にアクセス。
+1. アカウントを作成
+1. AccountSettingsからSSH Keysという項目で公開鍵を登録
+1. `$ ssh git@github.com`を行う
+`Hi ユーザ名! You've successfully authenticated, but GitHub does not provide shell access.`という反応が返ってくれば終了です。
+1. ここまで終了したらltakeshiまでご一報ください。作成していただいたアカウントに編集権限出します。
+
+## Herokuへの登録
+1. メールアドレスを教えていただき次第編集権限出します。
 
 # PRMapSelectorをローカル環境に構築するまで
 ## ライブラリインストール
@@ -21,6 +38,12 @@
     $ mkdir ~/src
     $ cd ~/src
     $ git clone git@github.com:ltakeshi/PRMapSelector.git
+    PRMapSelector/.git/configに以下を追記
+    ```
+    [remote "heroku"]
+        url = git@heroku.com:prmapselector.git
+        fetch = +refs/heads/*:refs/remotes/heroku/*
+    ```
     $ cd PRMapSelector
     $ rbenv exec bundle install
     # PRMapSelectorが起動するか確認。下記を実行すると、railsの鯖が立ち上がるので、
@@ -74,5 +97,4 @@ sbenehoutskirts:
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
 記述場所は適切な位置に入れておいてください。  
-
-2. これ以降は上記例の2以降と同じ動きになります。
+これ以降は上記例の2以降と同じ動きになります。
