@@ -87,7 +87,7 @@ gitで更新されたファイルをステージ
 1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
 今回の場合だと
 ```yaml
-<pre>
+
 sbenehoutskirts:
   name: Sbeneh Outskirts
   rules:
@@ -96,7 +96,8 @@ sbenehoutskirts:
     - 3
     - 4
     - 7
-</pre>
+
+
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
 記述場所は適切な位置に入れておいてください。  
