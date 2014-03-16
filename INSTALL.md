@@ -99,4 +99,4 @@ sbenehoutskirts:
     - 7
 ```
 
-これ以降は上記例の[2.](https://github.com/ltakeshi/PRMapSelector/blob/master/INSTALL.md#%E6%97%A2%E5%AD%98%E3%81%AEmap%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%81%AA%E3%81%84%E3%81%97%E3%81%AF%E5%89%8A%E9%99%A4)以降と同じ動きになります。
+これ以降は[上記例](https://github.com/ltakeshi/PRMapSelector/blob/master/INSTALL.md#%E6%97%A2%E5%AD%98%E3%81%AEmap%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%81%AA%E3%81%84%E3%81%97%E3%81%AF%E5%89%8A%E9%99%A4)の2.以降と同じ動きになります。
