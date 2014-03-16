@@ -1,23 +1,25 @@
 # Github及び、Herokuへのアカウント作成
 ## 承前
 GithubとHerokuへの編集権限出すので、捨てなメールアドレスでもいいので、適当なメールアドレスを一つ教えてください。  
+このマニュアルはUbuntu12.04にて作成してます。他のOSで作業する場合は適宜読み替えてください。  
 
 ## SSHの公開鍵認証用のファイルを作成(すでに存在してる場合は読み飛ばしてください)
-`$ ssh-keygen`
+`$ ssh-keygen`  
 で公開鍵を作成。引数等を与えないとid_rsaとid_rsa.pubというファイルが生成されるはず
 
 ## Githubへの登録
 1. [Github](https://github.com/)にアクセス。
 1. アカウントを作成
 1. AccountSettingsからSSH Keysという項目で公開鍵を登録
-1. `$ ssh git@github.com`を行う
+1. `$ ssh git@github.com`  を行う  
 `Hi ユーザ名! You've successfully authenticated, but GitHub does not provide shell access.`という反応が返ってくれば終了です。
 1. ここまで終了したらltakeshiまでご一報ください。作成していただいたアカウントに編集権限出します。
 
 ## Herokuへの登録
 1. メールアドレスを教えていただき次第編集権限出します。
+1. `heroku login`  でログイン出来るかどうか確認してください。
 
-# PRMapSelectorをローカル環境に構築するまで
+# PRMapSelectorをローカル環境に構築
 ## ライブラリインストール
     $ sudo apt-get install -y git-core build-essential curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev sqlite3 libsqlite3-dev libpq-dev
     $ sudo apt-get build-dep ruby-defaults
@@ -76,13 +78,13 @@ gitで更新されたファイルをステージ
 ## 新規Mapの追加ないしは既存のMapの削除
 今回はタイミングよく新マップが出たんで、それを例に取ります
 
-2. [Project Reality: BF2 Map Gallery](http://www.realitymod.com/mapgallery/) からマップの画像を取得してapp/assets/images/に配置。
+1. [Project Reality: BF2 Map Gallery](http://www.realitymod.com/mapgallery/) からマップの画像を取得してapp/assets/images/に配置。
 存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、
 それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。
 尚ファイル名はすべて小文字で記号等は一切なしでお願いします。
 今回の場合だと sbenehoutskirts.jpg となってます。
 
-2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
+1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
 今回の場合だと
 ```yaml
 sbenehoutskirts:
@@ -93,7 +95,7 @@ sbenehoutskirts:
     - 3
     - 4
     - 7
-```
+
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
 記述場所は適切な位置に入れておいてください。  
