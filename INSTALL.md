@@ -64,7 +64,7 @@ gitで更新されたファイルをステージ
 
     $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv  
     $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build  
-
+`$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build`
 
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
