@@ -73,8 +73,5 @@ sbenehoutskirts:
 ```
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
-記述場所は適切な位置に入れておいてください。
-
-3. 動作確認  
-上記と同様  
-`$ bundle exec rails server`
+記述場所は適切な位置に入れておいてください。  
+これ以降は上記例の2以降と同じ動きになります。
