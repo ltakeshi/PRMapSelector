@@ -40,13 +40,8 @@ GithubとHerokuへの編集権限出すので、捨てなメールアドレスでもいいので、適当なメー
     $ mkdir ~/src
     $ cd ~/src
     $ git clone git@github.com:ltakeshi/PRMapSelector.git
-    PRMapSelector/.git/configに以下を追記
----
-    [remote "heroku"]
-        url = git@heroku.com:prmapselector.git
-        fetch = +refs/heads/*:refs/remotes/heroku/*
----
     $ cd PRMapSelector
+    $ git remote add heroku git@heroku.com:prmapselector.git
     $ rbenv exec bundle install
     # PRMapSelectorが起動するか確認。下記を実行すると、railsの鯖が立ち上がるので、
     # http://127.0.0.1:3000/ でアクセスして動作を確認。
