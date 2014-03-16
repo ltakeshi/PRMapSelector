@@ -1,8 +1,8 @@
-- Github及び、Herokuへのアカウント作成
+# Github及び、Herokuへのアカウント作成
 
-- PRMapSelectorをローカル環境に構築するまで
--- ライブラリインストール
-$ sudo apt-get install -y git-core build-essential curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev sqlite3 libsqlite3-dev libpq-dev
+# PRMapSelectorをローカル環境に構築するまで
+## ライブラリインストール
+`$ sudo apt-get install -y git-core build-essential curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev sqlite3 libsqlite3-dev libpq-dev`
 $ sudo apt-get build-dep ruby-defaults
 
 -- Rubyのインストール
