@@ -57,6 +57,7 @@ gitで更新されたファイルをステージ
 それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。
 尚ファイル名はすべて小文字で記号等は一切なしでお願いします。
 今回の場合だと sbenehoutskirts.jpg となってます。
+
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
 今回の場合だと  
 ```yaml
@@ -71,7 +72,8 @@ sbenehoutskirts:
 ```
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
-記述場所は適切な位置に入れておいてください。  
+記述場所は適切な位置に入れておいてください。
+
 3. 動作確認  
 上記と同様  
 `$ bundle exec rails server`
