@@ -32,19 +32,19 @@
 1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集。  
 config/pr_maps.yamlの要らなくなったルールを行ごと消してもらえれば大丈夫です。
 
-2. 動作確認  
+1. 動作確認  
 下記コマンドの後、ブラウザでhttp://127.0.0.1:3000/にアクセスして動作を確認  
 `$ bundle exec rails server`
 
-3. 更新内容をgitに反映  
+1. 更新内容をgitに反映  
 gitで更新されたファイルをステージ  
 `$ git add .`
 
-4. 更新内容をコミット  
+1. 更新内容をコミット  
 `$ git commit -a -m "更新内容" `  
 この時、更新内容部分は"update マップ名"とか"add マップ名"といった感じです。
 
-5. 更新内容をサーバーにプッシュ  
+1. 更新内容をサーバーにプッシュ  
 `$ git push origin master ;git push heroku master`  
 前のコマンドはgithubに対する更新  
 後ろのコマンドはherokuに対する更新となってます。  
@@ -53,7 +53,7 @@ gitで更新されたファイルをステージ
 ## 新規Mapの追加ないしは既存のMapの削除
 今回はタイミングよく新マップが出たんで、それを例に取ります
 
-1. [Project Reality: BF2 Map Gallery](http://www.realitymod.com/mapgallery/) からマップの画像を取得してapp/assets/images/に配置。
+2. [Project Reality: BF2 Map Gallery](http://www.realitymod.com/mapgallery/) からマップの画像を取得してapp/assets/images/に配置。
 存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、
 それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。
 尚ファイル名はすべて小文字で記号等は一切なしでお願いします。
