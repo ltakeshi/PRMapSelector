@@ -51,15 +51,15 @@ gitで更新されたファイルをステージ
 この作業の後に http://prmapselector.herokuapp.com/ にて更新が反映されてるか確認してください。
 
 ## 新規Mapの追加ないしは既存のMapの削除
-今回はタイミングよく新マップが出たんで、それを例に取ります
+今回はタイミングよく新マップが出たんで、それを例に取ります  
 1. http://www.realitymod.com/mapgallery/ からマップの画像を取得してapp/assets/images/に配置。  
 存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、  
 それを新マップ名にコピーするなりシンボリックリンクを貼るなりしてください。  
 尚ファイル名はすべて小文字で記号等は一切なしでお願いします。  
 今回の場合だと sbenehoutskirts.jpg となってます。  
 
-2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集。  
-今回の場合だと
+2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
+今回の場合だと  
     sbenehoutskirts:
     &nbsp;&nbsp;name: Sbeneh Outskirts
     &nbsp;&nbsp;rules:
@@ -67,12 +67,12 @@ gitで更新されたファイルをステージ
     &nbsp;&nbsp;&nbsp;&nbsp;- 2
     &nbsp;&nbsp;&nbsp;&nbsp;- 3
     &nbsp;&nbsp;&nbsp;&nbsp;- 4
-    &nbsp;&nbsp;&nbsp;&nbsp;- 7
+    &nbsp;&nbsp;&nbsp;&nbsp;- 7  
 という形式になってます。  
 仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
 記述場所は適切な位置に入れておいてください。  
 hash mark 本当はプログラム側でソートするような仕様にしておけばいいんでしょうが、そこまで考えが及んでなかったです、申し訳ない。
 
-3. 動作確認
-上記と同様
-$ bundle exec rails server
+3. 動作確認  
+上記と同様  
+`$ bundle exec rails server`
