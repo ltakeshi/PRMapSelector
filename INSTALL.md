@@ -59,7 +59,7 @@ gitで更新されたファイルをステージ
 今回の場合だと sbenehoutskirts.jpg となってます。  
 
 2. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
-今回の場合だと  
+今回の場合だと
     $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 という形式になってます。  
