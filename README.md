@@ -1,10 +1,10 @@
 # PRMapSelector
-## ����
-PRMapSelector��[BF2:PR](http://www.realitymod.com/)�����ܿͥ��ߥ�˥ƥ��Ǥ���[Battlefield2:ProjectReality �������祳�ߥ�˥ƥ�](http://projectreality-jp.blogspot.jp/)�ˤ��轵�������˹Ԥ��륤�٥�ȤΥޥå������������뤿�������ޤ�����
+## 概要
+PRMapSelectorは[BF2:PR](http://www.realitymod.com/)の日本人コミュニティである[Battlefield2:ProjectReality 日本総合コミュニティ](http://projectreality-jp.blogspot.jp/)にて毎週土曜日に行われるイベントのマップ選定を補助するために製作しました。
 
-## ����
-### ����ե�����
-config/pr\_maps.yaml��config/pr\_rules.yaml�򻲾Ȥ��ưʲ��Τ褦�ʥե����ޥåȤ�ʸ�������Ϥ��ޤ���
+## 仕様
+### 設定ファイル
+config/pr\_maps.yamlとconfig/pr\_rules.yamlを参照して以下のようなフォーマットの文字列を出力します。
 
 * Al Basrah: INS Std
 * Burning Sands: AAS Large
@@ -12,7 +12,7 @@ config/pr\_maps.yaml��config/pr\_rules.yaml�򻲾Ȥ��ưʲ��Τ褦�ʥե����ޥåȤ��
 * Shijia Valley: C&C Std 
 
 #### config/pr\_maps.yaml
-config/pr\_maps.yaml��YAML�����ˤʤäƤ��ꡢ�ʲ��Υե����ޥåȤȤʤäƤ��ޤ���
+config/pr\_maps.yamlはYAML形式になっており、以下のフォーマットとなっています。
 <pre>
 albasrah:
     name: Al Basrah
@@ -21,42 +21,42 @@ albasrah:
     	- 7
     	- 8
 </pre>
-�嵭�����Al Basrah�Ǥ���������¾�ξ���Ʊ�ͤǤ�������Ū�ˤ�
+上記の例はAl Basrahですが、その他の場合も同様です。具体的には
 <pre>
     albasrah:
 </pre>
-�ǥץ��������ǻ��Ȥ����̾�������ꤷ�ޤ������٤ƾ�ʸ���Ƕ������Ͻ������Τ���Ѥ��ޤ���
+でプログラム内で参照される名前を設定します。すべて小文字で空白等は除去したものを使用します。
 <pre>
     name: Al Basrah
 </pre>
-�ޥåפ�����̾�Τ����ꤷ�Ƥ��ޤ������줬�ǽ�Ū�ʥե����ޥåȤν��Ϥκݤ����Ѥ���ޤ����ü��ʸ����¸�ߤ��Ƥ�����ϥ��������פʤɤ��Ƥ�����������Ȥ��Ƥϰʲ��Τ褦�ˤʤ�ޤ���
+マップの正式名称を設定しています。これが最終的なフォーマットの出力の際に利用されます。特殊な文字が存在している場合はエスケープなどしてください。例としては以下のようになります。
 <pre>
     name: 'Charlie''s Point'
 </pre>
-�롼������ꤷ�Ƥ���Τϰʲ��ιԤˤʤ�ޤ���
+ルールを設定しているのは以下の行になります。
 <pre>
 	rules:
         - 6
     	- 7
     	- 8
 </pre>
-�롼���config/pr\_rules.yaml�򻲾Ȥ��Ƥ��ꡢ�롼������򤹤�ݤ˻��Ѥ���ޤ���
+ルールはconfig/pr\_rules.yamlを参照しており、ルールを選択する際に使用されます。
 
 #### config/pr\_rules.yaml
-config/pr\_rules.yaml��YAML�����ˤʤäƤ��ꡢ�ʲ��Υե����ޥåȤȤʤäƤ��ޤ���
+config/pr\_rules.yamlはYAML形式になっており、以下のフォーマットとなっています。
 <pre>
 1: AAS Inf
 2: AAS Alt
 </pre>
-�����ʬ�������������ܺ٤�ά��
+見れば分かるだろうから詳細は略。
 
-#### *.html.erb���javascript�ˤĤ���
-jQuery+Javascript�ˤĤ��Ƥ��ǿͤʤΤ�(¾�⤢�ޤ��Ѥ��ʤ�����)ư���Ф��������٤Ǻ�äƤޤ������꤬����м�ͳ��ľ���Ƥ���������
+#### *.html.erb内のjavascriptについて
+jQuery+Javascriptについては素人なので(他もあまり変わらないけど)動けばいいや程度で作ってます。問題があれば自由に直してください。
 
-### �ǥ�����ˤĤ���
-����[twitter-bootstrap](http://getbootstrap.com/)��[masonry](http://masonry.desandro.com/)�����Ѥ��ƥǥ����󤷤Ƥ��ޤ������꤬����м�ͳ��ľ���Ƥ���������
+### デザインについて
+基本[twitter-bootstrap](http://getbootstrap.com/)と[masonry](http://masonry.desandro.com/)を利用してデザインしています。問題があれば自由に直してください。
 
-## ���Τ�����
+## 既知の問題
 
-* �ޥåפ����򤷤Ƥ��ʤ��Ƥ�롼������򤹤���̤����ܤǤ��롣�ޥå�����ڡ����ˤ�Javascript���б����褦�Ȼפä����ɡ���������­�ˤ��̤������
-* app/assets/images�ˤ��륤�᡼����[Project Reality: BF2 Map Gallery](http://www.ancientdev.com/mapgallery/)����̵�Ǥǻ��äƤ��Ƥ��ǥ�������ˤʤ뤫�⡣����ˤʤäƤ����б��Ǥ⤤�����ʡ���ľ�ɤ��Ƥ��⤫�Фʤ���
+* マップを選択していなくてもルールを選択する画面に遷移できる。マップ選択ページにてJavascriptで対応しようと思ったけど、技術力不足により未実装。
+* app/assets/imagesにあるイメージは[Project Reality: BF2 Map Gallery](http://www.ancientdev.com/mapgallery/)から無断で持ってきてるんでコレ問題になるかも。問題になってから対応でもいいかな。正直良い案が浮かばない。

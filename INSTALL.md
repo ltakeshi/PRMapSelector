@@ -1,30 +1,30 @@
-# Github�ڤӡ�Heroku�ؤΥ�������Ⱥ���
-## ����
-Github��Heroku�ؤ��Խ����½Ф��Τǡ��ΤƤʥ᡼�륢�ɥ쥹�Ǥ⤤���Τǡ�Ŭ���ʥ᡼�륢�ɥ쥹���Ķ����Ƥ���������  
-���Υޥ˥奢���Ubuntu12.04�ˤƺ������Ƥޤ���¾��OS�Ǻ�Ȥ������Ŭ���ɤ��ؤ��Ƥ���������  
+# Github及び、Herokuへのアカウント作成
+## 承前
+GithubとHerokuへの編集権限出すので、捨てなメールアドレスでもいいので、適当なメールアドレスを一つ教えてください。  
+このマニュアルはUbuntu12.04にて作成してます。他のOSで作業する場合は適宜読み替えてください。  
 
-## SSH�θ�����ǧ���ѤΥե���������(���Ǥ�¸�ߤ��Ƥ�����ɤ����Ф��Ƥ�������)
+## SSHの公開鍵認証用のファイルを作成(すでに存在してる場合は読み飛ばしてください)
 `$ ssh-keygen`  
-�Ǹ��������������������Ϳ���ʤ���id_rsa��id_rsa.pub�Ȥ����ե����뤬���������Ϥ�
+で公開鍵を作成。引数等を与えないとid_rsaとid_rsa.pubというファイルが生成されるはず
 
-## Github�ؤ���Ͽ
-1. [Github](https://github.com/)�˥���������
-1. ��������Ȥ����
-1. AccountSettings����SSH Keys�Ȥ������ܤǸ���������Ͽ
-1. `$ ssh git@github.com`  ��Ԥ�  
-`Hi �桼��̾! You've successfully authenticated, but GitHub does not provide shell access.`�Ȥ���ȿ�����֤äƤ���н�λ�Ǥ���
-1. �����ޤǽ�λ������ltakeshi�ޤǤ����󤯤��������������Ƥ�����������������Ȥ��Խ����½Ф��ޤ���
+## Githubへの登録
+1. [Github](https://github.com/)にアクセス。
+1. アカウントを作成
+1. AccountSettingsからSSH Keysという項目で公開鍵を登録
+1. `$ ssh git@github.com`  を行う  
+`Hi ユーザ名! You've successfully authenticated, but GitHub does not provide shell access.`という反応が返ってくれば終了です。
+1. ここまで終了したらltakeshiまでご一報ください。作成していただいたアカウントに編集権限出します。
 
-## Heroku�ؤ���Ͽ
-1. �᡼�륢�ɥ쥹�򶵤��Ƥ������������Խ����½Ф��ޤ���
-1. `heroku login`  �ǥ����������뤫�ɤ�����ǧ���Ƥ���������
+## Herokuへの登録
+1. メールアドレスを教えていただき次第編集権限出します。
+1. `heroku login`  でログイン出来るかどうか確認してください。
 
-# PRMapSelector���������Ķ��˹���
-## �饤�֥�ꥤ�󥹥ȡ���
+# PRMapSelectorをローカル環境に構築
+## ライブラリインストール
     $ sudo apt-get install -y git-core build-essential curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev sqlite3 libsqlite3-dev libpq-dev
     $ sudo apt-get build-dep ruby-defaults
 
-## Ruby�Υ��󥹥ȡ���
+## Rubyのインストール
     $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
     $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
@@ -34,7 +34,7 @@ Github��Heroku�ؤ��Խ����½Ф��Τǡ��ΤƤʥ᡼�륢�ɥ쥹�Ǥ⤤���Τǡ�Ŭ���ʥ᡼
     $ rbenv rehash
     $ rbenv global 2.1.0
 
-## Rails���󥹥ȡ���
+## Railsインストール
     $ rbenv exec gem install bundler
     $ rbenv rehash
     $ mkdir ~/src
@@ -43,46 +43,46 @@ Github��Heroku�ؤ��Խ����½Ф��Τǡ��ΤƤʥ᡼�륢�ɥ쥹�Ǥ⤤���Τǡ�Ŭ���ʥ᡼
     $ cd PRMapSelector
     $ git remote add heroku git@heroku.com:prmapselector.git
     $ rbenv exec bundle install
-    # PRMapSelector����ư���뤫��ǧ��������¹Ԥ���ȡ�rails�λ���Ω���夬��Τǡ�
-    # http://127.0.0.1:3000/ �ǥ�����������ư����ǧ��
+    # PRMapSelectorが起動するか確認。下記を実行すると、railsの鯖が立ち上がるので、
+    # http://127.0.0.1:3000/ でアクセスして動作を確認。
     $ bundle exec rails server
 
-# ���ꤵ��빹������
-## ��¸��Map���Ф���롼����ɲäʤ����Ϻ��
-1. config/pr_rules.yaml�򻲾Ȥ��ʤ���config/pr_maps.yaml���Խ���  
-config/pr_maps.yaml���פ�ʤ��ʤä��롼���Ԥ��Ⱦä��Ƥ�館�������פǤ���
+# 想定される更新内容
+## 既存のMapに対するルールの追加ないしは削除
+1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集。  
+config/pr_maps.yamlの要らなくなったルールを行ごと消してもらえれば大丈夫です。
 
-1. ư���ǧ  
-�������ޥ�ɤθ塢�֥饦���� http://127.0.0.1:3000/ �˥�����������ư����ǧ  
+1. 動作確認  
+下記コマンドの後、ブラウザで http://127.0.0.1:3000/ にアクセスして動作を確認  
 `$ bundle exec rails server`
 
-1. �������Ƥ�git��ȿ��  
-git�ǹ������줿�ե�����򥹥ơ���  
+1. 更新内容をgitに反映  
+gitで更新されたファイルをステージ  
 `$ git add .`
 
-1. �������Ƥ򥳥ߥå�  
-`$ git commit -a -m "��������" `  
-���λ�������������ʬ��"update �ޥå�̾"�Ȥ�"add �ޥå�̾"�Ȥ��ä������Ǥ���
+1. 更新内容をコミット  
+`$ git commit -a -m "更新内容" `  
+この時、更新内容部分は"update マップ名"とか"add マップ名"といった感じです。
 
-1. �������Ƥ򥵡��С��˥ץå���  
+1. 更新内容をサーバーにプッシュ  
 `$ git push origin master ;git push heroku master`  
-���Υ��ޥ�ɤ�github���Ф��빹��  
-����Υ��ޥ�ɤ�heroku���Ф��빹���ȤʤäƤޤ���  
-���κ�Ȥθ�� http://prmapselector.herokuapp.com/ �ˤƹ�����ȿ�Ǥ���Ƥ뤫��ǧ���Ƥ���������
+前のコマンドはgithubに対する更新  
+後ろのコマンドはherokuに対する更新となってます。  
+この作業の後に http://prmapselector.herokuapp.com/ にて更新が反映されてるか確認してください。
 
-## ����Map���ɲäʤ����ϴ�¸��Map�κ��
-����ϥ����ߥ󥰤褯���ޥåפ��Ф���ǡ��������˼��ޤ�
+## 新規Mapの追加ないしは既存のMapの削除
+今回はタイミングよく新マップが出たんで、それを例に取ります
 
-1. [Project Reality: BF2 Map Gallery](http://www.realitymod.com/mapgallery/) ����ޥåפβ������������app/assets/images/�����֡�
-¸�ߤ��Ƥ��ʤ����� app/assets/images/ ���noimage.jpg�äƤΤ�¸�ߤ��Ƥ��ǡ�
-����򿷥ޥå�̾�˥��ԡ����Ƥ���������
-���ե�����̾�Ϥ��٤ƾ�ʸ���ǵ������ϰ��ڤʤ��Ǥ��ꤤ���ޤ���
-����ξ����� _sbenehoutskirts.jpg_ �ȤʤäƤޤ���
+1. [Project Reality: BF2 Map Gallery](http://www.realitymod.com/mapgallery/) からマップの画像を取得してapp/assets/images/に配置。
+存在していない場合は app/assets/images/ 内にnoimage.jpgってのが存在してるんで、
+それを新マップ名にコピーしてください。
+尚ファイル名はすべて小文字で記号等は一切なしでお願いします。
+今回の場合だと _sbenehoutskirts.jpg_ となってます。
 
-1. config/pr_rules.yaml�򻲾Ȥ��ʤ���config/pr_maps.yaml���Խ�  
-����ξ����Ȳ����Τ褦�ˤʤäƤ��ޤ���  
-���ͤ� https://github.com/ltakeshi/PRMapSelector �򻲾Ȥ��Ƥ�館���ʬ����䤹�����ȡ�  
-���Ҿ���Ŭ�ڤʰ��֤�����Ƥ����Ƥ���������  
+1. config/pr_rules.yamlを参照しながらconfig/pr_maps.yamlを編集  
+今回の場合だと下記のようになっています。  
+仕様は https://github.com/ltakeshi/PRMapSelector を参照してもらえると分かりやすいかと。  
+記述場所は適切な位置に入れておいてください。  
 ```yaml
 sbenehoutskirts:
   name: Sbeneh Outskirts
@@ -94,4 +94,4 @@ sbenehoutskirts:
     - 7
 ```
 
-����ʹߤ�[�嵭��](https://github.com/ltakeshi/PRMapSelector/blob/master/INSTALL.md#%E6%97%A2%E5%AD%98%E3%81%AEmap%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%81%AA%E3%81%84%E3%81%97%E3%81%AF%E5%89%8A%E9%99%A4)��2.�ʹߤ�Ʊ��ư���ˤʤ�ޤ���
+これ以降は[上記例](https://github.com/ltakeshi/PRMapSelector/blob/master/INSTALL.md#%E6%97%A2%E5%AD%98%E3%81%AEmap%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%81%AA%E3%81%84%E3%81%97%E3%81%AF%E5%89%8A%E9%99%A4)の2.以降と同じ動きになります。
