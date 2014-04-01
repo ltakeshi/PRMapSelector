@@ -78,6 +78,13 @@ dovre:
     - 3
     - 4
 
+dovre_winter:
+  name: Dovre (Winter)
+  rules:
+    - 1
+    - 2
+    - 3
+
 dragonfly:
   name: Dragon Fly
   rules:
