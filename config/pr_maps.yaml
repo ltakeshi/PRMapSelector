@@ -145,16 +145,16 @@ karbala:
     - 7
     - 8
 
-kashandesert:
-  name: Kashan Desert
-  rules:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 9
-    - 10
-    - 11
+# kashandesert:
+#   name: Kashan Desert
+#   rules:
+#     - 1
+#     - 2
+#     - 3
+#     - 4
+#     - 9
+#     - 10
+#     - 11
 
 khamisiyah:
   name: Khamisiyah
