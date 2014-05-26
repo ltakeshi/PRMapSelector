@@ -5,9 +5,11 @@ albasrah:
     - 6
     - 7
 
-#arcticlion:
-#  name:Arctic Lion
-#  rules:
+arcticlion:
+  name: Arctic Lion
+  rules: 
+    - 2
+    - 3
 
 asadkhal: 
   name: Asad Khal
@@ -120,9 +122,12 @@ gazabeach:
     - 5
     - 7
 
-#hadespeak:
-#  name:Hades Peak
-#  rules:
+hadespeak:
+  name: Hades Peak
+  rules: 
+    - 2
+    - 3
+    - 4
 
 hill488:
   name: Hill 488
@@ -294,9 +299,14 @@ shijiavalley:
     - 9
     - 11
 
-#shikotanisland:
-#  name: Shikotan Island
-#  rules:
+shikotanisland:
+  name: Shikotan Island
+  rules: 
+    - 1
+    - 2
+    - 3
+    - 4
+    - 7
 
 silenteagle:
   name: Silent Eagle
