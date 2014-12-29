@@ -58,7 +58,7 @@ end
 gem "heroku"
 gem "therubyracer"
 gem "less-rails"
-gem "twitter-bootstrap-rails"
+gem "twitter-bootstrap-rails" , '= 2.2.8'
 
 
 gem 'google-analytics-rails'
