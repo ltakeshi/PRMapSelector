@@ -5,12 +5,6 @@ albasrah:
     - 6
     - 7
 
-arcticlion:
-  name: Arctic Lion
-  rules: 
-    - 2
-    - 3
-
 asadkhal: 
   name: Asad Khal
   rules: 
@@ -23,7 +17,6 @@ assaultonmestia:
   name: Assault on Mestia
   rules:
     - 1
-    - 2
     - 3
 
 battleofiadrang:
@@ -69,8 +62,6 @@ burningsands:
     - 1
     - 3
     - 4
-    - 6
-    - 7
 
 charliespoint:
   name: 'Charlie''s Point'
@@ -125,9 +116,12 @@ gazabeach:
 hadespeak:
   name: Hades Peak
   rules: 
+    - 1
     - 2
     - 3
     - 4
+    - 10
+    - 11
 
 hill488:
   name: Hill 488
@@ -218,6 +212,11 @@ muttrahcity:
     - 3
     - 4
 
+nuijamaa:
+  name: Nuijamaa
+  rules:
+    - 3
+
 operationarcher:
   name: Operation Archer
   rules:
@@ -283,7 +282,6 @@ sbenehoutskirts:
   name: Sbeneh Outskirts
   rules:
     - 1
-    - 2
     - 3
     - 4
     - 7
@@ -298,15 +296,6 @@ shijiavalley:
     - 4
     - 9
     - 11
-
-shikotanisland:
-  name: Shikotan Island
-  rules: 
-    - 1
-    - 2
-    - 3
-    - 4
-    - 7
 
 silenteagle:
   name: Silent Eagle
