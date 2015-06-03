@@ -215,7 +215,10 @@ muttrahcity:
 nuijamaa:
   name: Nuijamaa
   rules:
+    - 1
+    - 2
     - 3
+    - 4
 
 operationarcher:
   name: Operation Archer
