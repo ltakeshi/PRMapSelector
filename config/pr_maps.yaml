@@ -139,7 +139,14 @@ gazabeach:
     - 4
     - 5
     - 7
-
+goosegreen:
+  name: Goose Green
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    
 hadespeak:
   name: Hades Peak
   rules: 
