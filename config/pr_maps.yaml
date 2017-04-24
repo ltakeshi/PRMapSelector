@@ -332,6 +332,13 @@ saaremaa:
     - 10
     - 11
 
+sahel:
+  name: Sahel - BETA
+  rules:
+    - 2
+    - 3
+    - 7
+
 sbenehoutskirts:
   name: Sbeneh Outskirts
   rules:
